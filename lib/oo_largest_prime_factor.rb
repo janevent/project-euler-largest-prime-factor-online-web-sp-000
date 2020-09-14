@@ -3,8 +3,8 @@ class LargestPrimeFactor
   attr_accessor :number 
   
   def initialize(n)
-    @n = n
-    @number = self.largest_prime
+   # @n = n
+    @number = self.largest_prime(n)
   end
   
   def is_prime?(digit)
@@ -18,10 +18,10 @@ class LargestPrimeFactor
     false
   end
   
-  def largest_prime 
+  def largest_prime(n) 
     i = 3 
     result = 0
-    ni = self.n
+    ni = n
     while i <= ni 
       if ni % i == 0 && is_prime?(i) 
         result = i 
