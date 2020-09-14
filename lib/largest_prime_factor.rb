@@ -17,8 +17,8 @@ def largest_prime_factor(number)
       if (number % n == 0 && is_prime?(n))
         o = n 
         number = number/n
-        n +=1
       end
+      n += 1
   end
   o
 end
