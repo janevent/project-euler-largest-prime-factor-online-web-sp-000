@@ -22,7 +22,7 @@ class LargestPrimeFactor
     result = 0
     ni = self.n
     while i <= ni 
-      if ni % i == && is_prime?(i) 
+      if ni % i == 0 && is_prime?(i) 
         result = i 
         ni = ni/i 
         
