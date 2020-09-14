@@ -30,6 +30,6 @@ class LargestPrimeFactor
       end
      i +=1
     end
-    @number = result
+    result
   end
 end
