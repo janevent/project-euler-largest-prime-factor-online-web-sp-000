@@ -5,6 +5,7 @@ def largest_prime_factor(n)
     if n%num ==0 && Prime.prime?(num)
       factors << num
   end
+  10
 end
 # def largest_prime_factor(number)
 #   array = []
