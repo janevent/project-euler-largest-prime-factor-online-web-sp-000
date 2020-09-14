@@ -1,14 +1,5 @@
-require 'prime'
+
 # Enter your procedural solution here!
-def largest_prime_factor(n)
-  factors = []
-  (2..n-1).each do |num|
-    if n%num ==0 && Prime.prime?(num)
-      factors << num
-    end
-  end
-  10
-end
 
 def is_prime?(n)
   tests = (2.. Math.sqrt(n).floor)
@@ -17,6 +8,19 @@ def is_prime?(n)
     return true 
   end
   false
+end
+
+def largest_prime_factor(number)
+  n = 3
+  o =  0 
+  while n <= number 
+      if (number % n == 0 && is_prime?(n))
+        o = n 
+        number = number/n
+        n +=1
+      end
+  end
+  o
 end
 # def largest_prime_factor(number)
 #   array = []
