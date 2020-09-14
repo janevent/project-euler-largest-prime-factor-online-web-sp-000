@@ -9,6 +9,10 @@ def largest_prime_factor(n)
   end
   10
 end
+
+def is_prime?(n)
+  tests = (2.. Math.sqrt(n))
+end
 # def largest_prime_factor(number)
 #   array = []
 #   p = 2 
