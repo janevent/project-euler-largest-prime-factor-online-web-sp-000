@@ -3,7 +3,7 @@
 
 def is_prime?(n)
   tests = (2.. Math.sqrt(n).floor)
-  tests = tests.select(x){ |x| n % x == 0 }
+  tests = tests.select { |x| n % x == 0 }
   if tests.empty? 
     return true 
   end
