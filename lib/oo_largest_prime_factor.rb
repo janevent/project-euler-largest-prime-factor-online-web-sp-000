@@ -4,6 +4,7 @@ class LargestPrimeFactor
   
   def initialize(n)
     @n = n
+    @number = self.largest_prime
   end
   
   def is_prime?(digit)
