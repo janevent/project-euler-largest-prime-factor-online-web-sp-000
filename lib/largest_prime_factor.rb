@@ -4,6 +4,7 @@ def largest_prime_factor(n)
   (2..n-1).each do |num|
     if n%num ==0 && Prime.prime?(num)
       factors << num
+    end
   end
   10
 end
